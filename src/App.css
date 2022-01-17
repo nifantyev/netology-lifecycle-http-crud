@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 10px;
+}
+
+.header {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.refresh {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note {
+  width: 200px;
+  padding: 10px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.note-remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  color: red;
+  background-color: white;
+}
+
+.note-form {
+  position: relative;
+  width: 300px;
+}
+
+.note-textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.note-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
